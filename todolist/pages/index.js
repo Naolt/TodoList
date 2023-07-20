@@ -48,11 +48,19 @@ function Home() {
     localStorage.setItem("tasks", JSON.stringify(updatedTasks));
   };
 
-  const handleDelete = (taskId) => {
-    const updatedTasks = tasks.filter((task) => task.id !== taskId);
+ // ...
+
+const handleDelete = (taskId) => {
+  const taskIndex = tasks.findIndex((task) => task.id === taskId);
+  if (taskIndex !== -1) {
+    const updatedTasks = [...tasks];
+    updatedTasks.splice(taskIndex, 1);
     setTasks(updatedTasks);
     localStorage.setItem("tasks", JSON.stringify(updatedTasks));
-  };
+  }
+};
+
+// ...
 
   const handleAddTask = () => {
     if (newTask.trim() === "") {
