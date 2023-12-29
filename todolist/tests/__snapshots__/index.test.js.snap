@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component renders Home component correctly 1`] = `
+<div>
+  <div
+    style="text-align: center; background-color: rgb(245, 245, 245); padding: 2rem; height: 100vh; overflow: hidden;"
+  >
+    <h1
+      class="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom css-1o2xzv0-MuiTypography-root"
+    >
+      Todo List
+    </h1>
+    <div
+      class="MuiBox-root css-1embff6"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root css-o9dsj-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1pysi21-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="false"
+          for=":r7:"
+          id=":r7:-label"
+        >
+          Add Task
+        </label>
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+            data-testid="add-task-input"
+            id=":r7:"
+            type="text"
+            value=""
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-yjsfm1"
+            >
+              <span>
+                Add Task
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge Mui-disabled MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge css-144pftz-MuiButtonBase-root-MuiButton-root"
+        data-testid="add-task-button"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        Add
+      </button>
+    </div>
+    <ul
+      class="MuiList-root MuiList-padding MuiList-dense css-12wg1bs-MuiList-root"
+    >
+      <div />
+    </ul>
+  </div>
+</div>
+`;

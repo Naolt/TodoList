@@ -72,4 +72,9 @@ describe("Home component", () => {
     const taskTitle = screen.queryByText("New Task");
     expect(taskTitle).not.toBeInTheDocument();
   });
+
+  test("renders Home component correctly", () => {
+    const { container } = render(<Home />);
+    expect(container).toMatchSnapshot();
+  });
 });
