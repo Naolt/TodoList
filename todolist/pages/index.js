@@ -48,12 +48,6 @@ function Home() {
     localStorage.setItem("tasks", JSON.stringify(updatedTasks));
   };
 
-  const handleDelete = (taskId) => {
-    const updatedTasks = tasks.filter((task) => task.id !== taskId);
-    setTasks(updatedTasks);
-    localStorage.setItem("tasks", JSON.stringify(updatedTasks));
-  };
-
   const handleAddTask = () => {
     if (newTask.trim() === "") {
       return;
@@ -201,16 +195,7 @@ function Home() {
                     spacing={1}
                     sx={{ opacity: 1, transition: "opacity 0.3s" }}
                     className="delete-icon"
-                  >
-                    <DeleteIconButton
-                      aria-label="delete"
-                      sx={{ opacity: 1 }}
-                      onClick={() => handleDelete(task.id)}
-                      data-testid={`delete-task-${task.id}`}
-                    >
-                      <DeleteIcon />
-                    </DeleteIconButton>
-                  </Stack>
+                  ></Stack>
                 </StyledBox>
               </ListItem>
             </Collapse>
