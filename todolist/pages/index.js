@@ -81,8 +81,8 @@ function Home() {
     <div
       style={{
         textAlign: "center",
-        backgroundColor: "#f5f5f5",
-        padding: "2rem",
+        backgroundColor: "#f5f5f6",
+        padding: "4rem",
         height: "100vh",
         overflow: "hidden",
       }}
